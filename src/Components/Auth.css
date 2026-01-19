@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+.auth{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #090909;
+    /* background: radial-gradient(
+    circle at 50% 0%, 
+    #1d3044 0%, 
+    #111111 100%
+  ); */
+    background-image: url("../assets/auth_bgd.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.auth .header{
+    font-family: 'poppins';
+    color: #ddd;
+    font-size: 2rem;
+
+}
+
+.container{
+    background-color: #181818; /* Solid dark charcoal */
+    border-radius: 16px;
+    border: 1px solid #070606;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    padding: 32px;
+    width: 100%;
+    max-width: 510px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container h2{
+    font-family: 'poppins';
+    color: #ddd;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container .cont-header p{
+    color: #ddd;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    }
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    }
+
+.social-btn:hover {
+    background: #f8f8f8;
+    border-color: #ccc;
+    }
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    }

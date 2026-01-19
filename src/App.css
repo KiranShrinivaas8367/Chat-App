@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/*Common style for all pages*/
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Room Container*/
+.room-container{
+    height: 100vh;
+    background-color: rgb(6, 6, 6);
+    color:aliceblue;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+}
+
+/*Room Header*/
+.room-container .room-header{
+    text-align: center;
+    padding:2rem 0;
+}
+
+/*Room Content*/
+.room-content{
+    background-color: #181818; 
+    border-radius: 16px;
+    border: 2px solid #ddd;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    padding: 32px;
+    width: 100%;
+    max-width: 510px;
+    height: 100vh;
+    max-height: 300px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+/*Label*/
+.room-content label{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/*Input*/
+.room-content input{
+  width: 50%;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 1rem 0;
+  padding: 1rem 16px;
+  font-size: 1rem;
+}
+
+.room-content input:focus{
+    outline: 2px solid #ddd;
+    color: #ddd;
+}
+
+/*Button*/
+.room-btn{
+    width: 8rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: #d5d0d0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Sign-Out*/
+.sign-out{
+    margin: 1.5rem 0;
+}
