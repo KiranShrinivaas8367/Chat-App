@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     /* justify-content: space-evenly; */
-    
 }
 
 .chat-app > :nth-child(1){
@@ -22,13 +21,15 @@
 
 .chat-app > :nth-child(2){
     border: 1px solid #ddd;
-    border-radius: 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     margin: 2rem 0;
 }
 
 .messages-display{
     width: 100%;
-    height: auto;
+    height: 50vh;
+    overflow: auto;
     /* max-height: auto; */
     max-width: 510px;
     display: flex;
@@ -78,4 +79,66 @@
     background-color: #d5d0d0;
     font-weight: bold;
     cursor: pointer;
+}
+
+/*Scroll bar*/
+/* Styles the entire scrollbar width/height */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+}
+
+/* Styles the track (background) */
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+/* Styles the thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #ffff;
+  border-radius: 20px; /*Optional: adds rounded corners*/
+}
+
+/*Responsive*/
+/*Tablet and Mobile adjustments*/
+@media (max-width: 768px){
+    .chat-app .chat-header{
+        font-size: 1.5rem;
+    }
+
+    .chat-app > :nth-child(2){
+        margin: 1.5rem 0;
+    }
+
+    .messages-display{
+        padding: 1rem 0;
+    }
+}
+
+/*Small Mobile adjustments*/
+@media (max-width: 580px){
+
+    .chat-app .chat-header{
+        font-size: 1.1rem;
+    }
+
+    .messages-display{
+        width: 90%;
+    }
+
+    .messages-display .messages > *{
+        margin: 1rem 0;
+    }
+
+    .send-btn{
+        width: 4rem;
+    }
+
+    .new-msg-form input{
+        width: 70%;
+    }
+
+    .sign-out .room-btn{
+        width: 5rem;
+    }
 }

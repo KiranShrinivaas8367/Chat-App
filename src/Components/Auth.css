@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 .auth{
     height: 100vh;
+    width: 100%;
+    min-width: 350px;
     display: grid;
     place-items: center;
     background-color: #090909;
@@ -28,12 +30,14 @@
     border: 1px solid #070606;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
     padding: 32px;
-    width: 100%;
+    width: 90%;
     max-width: 510px;
+    min-width: 350px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 2.5rem;
 }
 
 .container h2{
@@ -82,3 +86,32 @@
     width: 20px;
     height: 20px;
     }
+
+/*Responsive*/
+/* Tablet and Mobile adjustments */
+@media (max-width: 768px) {
+    .auth .header {
+        font-size: 1.5rem; /* Smaller main header */
+    }
+    
+    .container {
+        padding: 24px; /* Less padding to save space */
+    }
+
+    .container h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Small Mobile adjustments */
+@media (max-width: 580px) {
+    .container {
+        width: 95%; /* Take up almost full width on tiny screens */
+        padding: 20px;
+    }
+    
+    .social-btn {
+        padding: 12px; /* Slightly smaller buttons */
+        font-size: 14px;
+    }
+}
