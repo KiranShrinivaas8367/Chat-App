@@ -25,7 +25,7 @@
 .room-container .room-header{
     text-align: center;
     padding:2rem 0;
-}
+}   
 
 /*Room Content*/
 .room-content{
@@ -80,4 +80,21 @@
 /*Sign-Out*/
 .sign-out{
     margin: 1.5rem 0;
+}
+
+/*Reponsive*/
+/*Mobile adjustments*/
+@media (max-width: 385px){
+    .room-header{
+        font-size: 1rem;
+        display: inline;
+    }
+
+    .room-content label{
+        font-size: 1.3rem;
+    }
+
+    .room-content input{
+        width: 70%;
+    }
 }
